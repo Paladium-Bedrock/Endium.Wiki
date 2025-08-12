@@ -26,11 +26,12 @@ contain all the components of the manifest, their individual properties, and wha
 
 ### metadata
 
-| Name    | Type         | Description                        |
-|---------|--------------|------------------------------------|
-| authors | String array | Name of the author(s) of the pack. |
-| license | String       | The license of the pack.           |
-| url     | String       | The home website of your pack..    |
+| Name           | Type         | Description                                                                                                                                                                                                                                              |
+|----------------|--------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| authors        | String array | Name of the author(s) of the pack.                                                                                                                                                                                                                       |
+| license        | String       | The license of the pack.                                                                                                                                                                                                                                 |
+| url            | String       | The home website of your pack..                                                                                                                                                                                                                          |
+| generated_with | String       | This is used to identify tools used to generate a manifest.json file. The tool names are strings that must be [a-zA-Z0-9_-] and 32 characters maximum. The tool version number are semver strings for each version that modified the manifest.json file. |
 
 ## Example
 
@@ -42,7 +43,9 @@ contain all the components of the manifest, their individual properties, and wha
     "description": "Example behavior pack"
   },
   "metadata": {
-    "authors": ["exampleAuthor"],
+    "authors": [
+      "exampleAuthor"
+    ],
     "license": "MIT",
     "url": "https://paladium-pvp.fr/"
   }
